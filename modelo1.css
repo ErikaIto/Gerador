@@ -1,0 +1,18 @@
+h1{
+	font-size:30px;
+	text-align: center;
+	color: #000000;
+}
+tr{ 
+    font-size: 12px;
+    text-align: justify;
+    color:#000000; 	
+}
+body{
+	background: #eee;
+}
+h2{
+	font-size:20px;
+	text-align: justify;
+	color:#000000;
+}
