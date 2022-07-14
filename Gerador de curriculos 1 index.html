@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>	
+    <title>CURRÍCULO</title>
+	<link href="modelo1.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#botao1").click(function(){
+				$("#campo:first").clone(true).find("input:test").val("").end().appendTo("#proxp:first");							
+			});
+		});	
+	</script>	
+</head>
+<body>
+	<h1>CURRÍCULO</h1>
+	<div class="tudo">
+		<div class="cabecalho">
+			<p><strong> Digite os dados para gerar o Curriculo:
+			</strong></p>
+            <form id="form1" name="form1"method="post" action="curriculo">
+
+    <table width="714"border="0">
+        </div>       	
+
+		<div class="corpo">		
+					<tr>
+				    <td width="104"><strong>Nome:</strong></td>
+					  <td><input name="nome"type="text" id="nome" size="45"/> 
+				</label></td>
+				<tr>
+				   <td width="101"><strong>Endereço:</strong></td>
+				   	 <td><input name="endereco"type="text"id="endereco"size="45"/>
+				   <td><strong> Numero:</strong></td>
+				     <td><input name="numero"type="text" id="numero"size="35"/>
+				</td>        
+				<tr>
+				   <td><strong>Bairro:</strong></td>
+				     <td><input name="bairro"type="text" id="bairro"size="45"/><td>
+				</td>
+				<tr>
+				   <td><strong>Cidade:</strong></td>
+				     <td><input name="cidade"type="text" id="cidade"size="45"/></td>
+				   <td><strong>UF:</strong></td>
+				     <td><input name="estado"type="text" id="estado"size="5"/></td>
+				</tr>
+				<tr>
+				   <td><strong>Cep:</strong></td>
+				     <td><input name="Cep"type="text" id="cep"size="35" /></td>
+				   <td><strong>Tel.:</strong>
+				     <td><input name="fone"type="text" id="fone"size="35"/></td>
+				</td>
+				<tr>
+				   <td><strong>Celular:</strong></td>
+				   <td><input name="cel"type="text"id="cel" size="35"/></td>
+				   <td><strong>E-mail:</strong></td>
+				   <td><input name="email"type="text"id="email" size="45"/></td>
+				</tr>
+				<tr>
+				   <td><strong>Nacionalidade:</strong></td>
+				   <td><input name="nacionalidade"type="text"id="nacionalidade" size="35"/></td>
+				   <td><strong>Naturalidade:</strong></td>
+				   <td><input name="naturalidade"type="text"id="naturalidade" size="45"/></td>
+				</tr>
+				<tr>
+				   <td><strong>Sexo:</strong></td>
+				   <td><select>
+				   		<option></option>
+				   		<option value="M">Masculino</option>
+				   		<option value="F">Feminino</option>
+				   	</select>
+				   <td><strong>Estado Civil:</strong></td>
+				   <td><select>
+				   		<option></option>
+				   		<option value="Casado(a)">Casado(a)</option>
+				   		<option value="Solteiro(a)">Solteiro(a)</option>
+				   		<option value="Divorciado(a)">Divorciado(a)</option>
+				   	</select>
+				</tr>
+				<tr>
+				   <td><strong>Idade:</strong></td>
+				   <td colspan="3"><input name="idade" type="text" id="idade" size="35"/></td>
+				</tr>
+
+	</table><hr/>
+	<div id="proxp">
+	<P><strong>Preencher os campos referentes a sua Formação Acadêmica:</strong></P>
+
+	<div id="campo">
+
+	<table width="698" border="1">
+		<tr>
+			<td width="75"><strong>Instituição:</strong></td>
+			<td width="210"><input name="escola"type="text" id="escola" size="35"/></td>
+			<td width="62"><strong>Cidade:</strong></td>
+			<td width="234"><input name="cidade_escola" type="text" id="cidade_escola" size="37"/></td>
+			<td width="30"><strong>UF:</strong></td>
+			<td width="47"><input name="estado_escola" type="text" id="estado_escola" size="9"/></td>
+		</tr>
+		<tr>
+		    <td><strong>Período:</strong></td>
+		    <td><input name="periodo" type="text" id="periodo" size="35"/></td>
+		    <td><strong>Situação:</strong></td>
+		    <td colspan="3"><input name="escola_situacao" type="text" id="escola_situacao" size="56"/></td>
+		</tr> 
+	</table>
+			<a i="botao1" href="javascript:void(0)">Adicionar</a>
+	</div>
+	</div>		
+	<div id="proxp">	   	
+<h3>Cursos: </h3>
+		<div id="campo">
+			
+	<table width="696" border="1">
+  <tr>	
+	<td width=><strong> Instituição:</strong></td>
+	<td width="262"><input name="escola_curso1" type="text" id="escola_curso1" size="35"/></td>
+	<td width="74"><strong> Descrição:</strong></td>
+	<td width="267"><input name="curso1" type="text" id="curso1" size="35" /></td>
+  <tr>
+   <td><strong> Instituição:</strong></td>
+	<td><input name="escola_curso2" type="text" id="escola_curso2" size="35"/></td>
+	<td><strong> Descrição:</strong></td>
+	<td><input name="curso2" type="text" id="curso2" size="35" /></td>
+  </tr>
+   <tr>
+   <td><strong> Instituição:</strong></td>
+	<td><input name="escola_curso3" type="text" id="escola_curso3" size="35"/></td>
+	<td><strong> Descrição:</strong></td>
+	<td><input name="curso3" type="text" id="curso3" size="35" /></td>
+  </tr>
+  		   </div>
+  	    </div>	
+	</table>
+
+	</body>
+		
+</tr>		
+		<a i="botao1" href="javascript:void(0)"> Adicionar</a>
+
+	<p><strong>Três ultimas empresas que você trabalhou, nos campos que não for preencher digite apenas o sinal &quot; -&quot; .</em></strong></p>
+			
+	<table width="714" border="1">
+		<tr>
+			<td width="60"><strong>Empresa:</strong></td>
+			<td width="210"><label>
+				<input name="empresa1" type="text" id="empresa1" size="55" />
+			</label></td>
+			<td width="90"><strong>Telefone:</strong></td>
+			<td width="150"><label>
+				<input type="text" name="fone_empresa1" id="fone_empresa1" />
+			</label></td>
+		</tr>
+		<tr>
+			<td><strong>Cargo:</strong></td>
+			<td colspan="4"><input name="cargo1" type="text"id="cargo1" size="91" /></td>
+		</tr>
+			</div>
+		<tr>
+			<td colspan="5">&nbsp;</td>
+		</tr>
+		<tr>	
+			<td width="60"><strong>Empresa:</strong></td>
+			<td width="210"><label>
+				<input name="empresa2" type="text" id="empresa2" size="55" />
+			</label></td>
+			<td width="90"><strong>Telefone:</strong></td>
+			<td width="150"><label>
+				<input type="text" name="fone_empresa2" id="fone_empresa2" />
+			</label></td>
+		</tr>
+		<tr>
+			<td><strong>Cargo:</strong></td>
+			<td colspan="4"><input name="cargo2" type="text"id="cargo2" size="91" /></td>
+		</tr>
+		<tr>
+			<td colspan="5">&nbsp;</td>
+		</tr>	
+		<tr>
+			<td width="60"><strong>Empresa:</strong></td>
+			<td width="210"><label>
+				<input name="empresa3" type="text" id="empresa3" size="55" />
+			</label></td>
+			<td width="90"><strong>Telefone:</strong></td>
+			<td width="150"><label>
+				<input type="text" name="fone_empresa3" id="fone_empresa3" />
+			</label></td>
+		</tr>
+		<tr>
+			<td><strong>Cargo:</strong></td>
+			<td colspan="4"><input name="cargo3" type="text"id="cargo3" size="91" /></td>
+		</tr>
+	
+		<tr>
+			<td colspan="6">&nbsp;</td>
+		</tr>
+	</table>
+			</div>		
+				
+	<p>&nbsp;</p>
+	<hr border="2"/>
+	<h3><strong>Qualificações:</strong></h3>
+	<p>
+		<label>	
+		  <textarea name="qualificacao" id="qualificacao" cols="65" rows="9"></textarea>
+		</label>
+	</p>
+			
+	<tr>
+		<td><strong>Imprimir:</strong>
+		<td colspan="3"><input type="button" value="Imprimir" onClick="window.print()"/>
+		</td>
+	</td>		
+	</tr>
+		</table>
+			</form>
+</tr>		
+</body>	
